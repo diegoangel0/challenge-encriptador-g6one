@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <img id="logo" src="imgs/logoalura.png">
+                <h1>Encriptador</h1>
+            </header>
+            <main>
+                <div class="container-main">
+                    <div class="consulta">
+                        <textarea class="textA" oninput="validarTexto()" cols="30" rows="10" placeholder="Escribir.Usar solo minusculas"></textarea>
+                        <div class="container-botones">
+                            <button class="botones" onclick="encriptarDesencriptar('encriptar')">Encriptar Ahora</button>
+                            <button class="botones" onclick="encriptarDesencriptar('desencriptar')">Desencriptar Ahora</button>
+                        </div>
+                    </div>
+                    <div class="respuesta">
+                        <div class="container-img">
+                            <img id="muñecoImg" src="imgs/figuralupa.png">
+                            <p class="no-se-encuentra">No hay mensaje</p>
+                            <label class="ingrese">Escriba el texto</label>
+                        </div>
+                        <div class="container-p">
+                            <p class="parrafo" id="parra"></p>
+                            <div class="boton-copiar">
+                                <button class="botones" id="copiar" onclick="bCopiar()">Copiar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
